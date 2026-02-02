@@ -3,7 +3,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 
-
 let usuarios = []
 
 try {
@@ -13,7 +12,7 @@ try {
   }
 } catch {}
 
-usuarios.push({ nombre: 'Adim Ondra', email: 'adam@climb.ing' })
+usuarios.push({ nombre: 'Ale Alondra', email: 'adam@climb.ing' })
 
 await writeFile('usuarios.json', JSON.stringify(usuarios, null, 2))
 console.log(usuarios)
